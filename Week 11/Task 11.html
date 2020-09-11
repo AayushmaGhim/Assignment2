@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task 11</title>
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GODKsrvchL_ZKTasLOEvRP2XdmTP0zHDpLLbr0gW45Pqej6Oq3Xyu4i6GjGkKfbgpr1SwQLrPAPiYS4C8P0RPuR4DThilk8vPUE6t94ucr9vzVI2wqPcmJXz4OfLuD6ZY-TQ0capNrz7TrAkzhWoQKjEzHWi0Jm7-4XcqGv9t33som_GOgSIKUAVL9RxccXM8WUXki5eHZtZAOPt2NV4s6AmHmIAI7uhB_Ne4veZGnBazR0JTelDhWxrXXanIKoAP1cTq-78wTj-wZnDJ9LdkMG6gOEqdWoPZlu0utdqZXkTiYYIW5CwAWBiEsCcQwAzDGc2_i43mLbcn-847Ap__6sYJL8UKTFsZZtWPbQlzRf96zGEd2_jSXsk9_3L1S1EL2Nww-SL089sOmQMBiBN9Gfz7GrbBtXHy2pwefyPBCCDaNqloCQKPREeerNaPQnpqUYSIRc0D96u_PJjeG73k70zFGZkqKeXmaX4tG1lsnSnOmhIrzN8wjikEKfwpfJIJpURTXSwbF7SZeuvXD6aEo6eiSfO_xkwY3FOZ4qYL8KTls6QrBszpQ0w4mJIlFrfkTfTflSUeLALsXN9CaAwelbUGchTrD-jfQUKIZaBwIpigG3J5IrnJEMvJ0FFqxRHLMInbCmp6tU6vwwT1Qg0jWhH061bNQoE7jq8VtCaYpd0ksqCMEFGdUKZbN-RyIbU25icxO2VGR1GzE8h-Y9RNbHazljx9Y6on_nJDdN8hNvenIl--G-LL7U30fSV9AAizXTGLzOlMVTL8U4hrlshNdt5prp3Ile0fl4o84y7EKfPc699UyUcEfaf718ytT8yZaEKKYGh8qBqQdhWkd1PFhZ2R2TRRLmSNPm_bJjtiIM9LS-wCVy0KxFz51fAhoq4YguO-PLSJgNHADLXz3_DzsBRo1gNYP-1TFeYaboXAdn98AuAuXY45dnoF6Bo8tpUMrmHI-Vo4O1xIRQPe16oTqa3VFaaNcHjnQ0lymgyRyPZOuoQEEy1VuY8LMUX4kiW7tcy7ngEqOQ76zGvr_Z2leVUqqo6p2m9UykSy_ZZCXAn__r1bB4uaR_pNSunb7vkmyZOh1OWZwwpOj9xA66rZjtKFufCv-6VCNPrzUdpliiWhBnoJh-p2ypVFI2cktBnsmvzalItMIkPd5XtgCKRBetXdDCX_fnZLF5qKIZSGyDuBp_PlJHt2x4ChsGS7OjXSC66KERYQtuSZpltWOt9Zw" nonce="bb95684cb73f779708c5893ee10d7514" charset="UTF-8"></script></head>
+  <body>
+    <script type="text/javascript">
+      var x = 0;
+  var array = Array();
+  function add_element_to_array()
+  {
+  array[x] = document.getElementById(text1).value;
+  alert("Element: " + array[x] + "Added at index" + x);
+  x++;
+  document.getElementById(text1).value ="";
+  }
+  function display_array()
+  {
+
+  var e = "<hr/>";
+  for (var y=0; y+ "="+array.length; y++)
+  {
+  e += "Element " + y + "="  + array[y] + "<br/>";
+  }
+  document.getElementById(Result).innerHTML = e;
+  }
+
+      </script>
+      <input type ="text" id = "text1">
+    </input>
+    <input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
+    <input type="button" id="button2" value="Display" onclick="display_array();"></input>
+    <div id="Result"></div>
+  </body>
+</html>

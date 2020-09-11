@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Task 1</title>
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YM6lG9DR9bikXX42gK0CPsNWw87kVcgof_TWGan_eEJwfmrGB4-CrM94eMpKQjI1cgfNh2hUPewXhRl6adGQv5SoGjpxNTSLb-Wk0UxOucPdl9-VsCOUURCyd1jWCp8vhUmURJzNdgKYYRJw6ZzW8NLUPgU3pgJB0PNvEmgdYULeocgXTeI8j3ayCjetLHhyCfp7Sc4TxBHH329auCioc6ssrwGfYLhXOGlt9ClI_DzdWeA03rQAutg1nwTUExKRbE1_721qASmaTu_GoI16OKS22zfSajmURGluHnkYVTjHH3WI8s959A04wPRISO130lYuRlKRfW_q39W6dj9_ih1WtKLRebMnjDmxSnEFbBRyhLzZ3eAOgPIYbWQ1Ay58bd_ef-OAUpZwuxMQT5aPncoUCivPiadBZvXUDl7kNFlZ3ul2nGnnpq-d6D8XRNLVNiE2MPVfUBMesvkbmbhVovl5Ysi2V5O8EeuzId_cMe5Xld-Ng6FmPuPcY_YUMVPhao8UA3rEC7Vp_viUHgn01_pOt9GZM_NV8JHwJ-96ugD9snWxAHxqnVFhlbAbjzmkHvqLkUl2I_dpf8vtcFzZLjTJJdK1U2G93z5o0iHV-CB28HUqdRX5u2Ac3zXGNJssVSCmVZIW4QrjBGVcxTpl3VbbBA_kbd_Q-n46jqSLVmslFTbLdSrWuHTTfDjrmXYOVLK18E5jGBOX2YRFusRYA73Y8aLp5Zwf07Qooz-yEp-q3_apXar5f9pjUPoLCx3BkUYvpGZoFm3wGwv7P6s5VjILG4c8UtVmBfxdXvFItHZXq89ZVN9O-G7SVhBdRqrnuFfsVFQB36sTebvcMu8__ObxQZk_vsr3-INd0GlSndqs8s_om5WsySODq4ZnLDpJph7J5K8TnDwk_RSBg6jxG7Qr1ecvuctKUOk1Pl6D8FPly7IkAIkpleu1qatwQ5tcrVRk-WXFuyyu_CiZjEUABeccM_f6_aZKk87DqKuaBqfNweRUYjyMg30skwpl_bt9G3ZYov5cu3NfLw3CpDEsHIaIbL0nRIXWHaELRvO3Ebd1lOHvL4NEk_1eFoxOqxhjShzsJ8vnTvXhIFytupIMN50xEQMI6bFRdrwYvCj3UEen44PvZnUeL-2_d9hENN8zwE-xUG2jgI-W9uyJqUs0EjOf90coNpe-vZmdF9oyIiJ0B9zwzQvJQ2dz-rXfJ8RiQhN8Q9raGw78f9LXr81_cg" nonce="025f0c0f250491b480f031008e2520be" charset="UTF-8"></script></head>
+  <body onload="clockStart()">
+    <script>
+      var dt=new Date();
+      var y = dt.getFullYear();
+      var m = dt.getMonth();
+      var d = dt.getDate();
+      document.write("Date: " +y +"-0"+ m +"-0" + d);
+</script>
+
+
+
+          <div id="clock">
+          	<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+          </div>
+
+          <script>
+              var timerId; // current timer if started
+              function clockStart() {
+                   if (timerId)
+                      return;
+                    timerId = setInterval(update, 1000);
+                    update();  // (*)
+              }
+              function update() {
+        var date = new Date();
+        var hours = date.getHours();
+        if (hours < 10)
+      	hours = '0'+hours;
+        document.getElementById('hour').innerHTML = hours;
+        var minutes = date.getMinutes();
+        if (minutes < 10)
+      	minutes = '0'+minutes;
+        document.getElementById('min').innerHTML = minutes;
+        var seconds = date.getSeconds();
+        if (seconds < 10)
+      	seconds = '0'+seconds;
+        document.getElementById('sec').innerHTML = seconds;
+      }
+      </script>
+  </body>
+</html>

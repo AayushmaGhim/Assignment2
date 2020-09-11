@@ -1,3 +1,9 @@
+body{
+	margin: 20px;
+	padding: 20px;
+}
+
+
 div.blue1 {width:100px;height:200px;background-color:#1aa3ff; 
 			border-color: white;
 			position:relative;left:0%;top:-100px;}
@@ -19,3 +25,8 @@ div.white2 {width:100px; height:50px; background-color: #cccccc;
 div.white3 {width:100px; height:50px; background-color: #cccccc;  
 			border-color: white; 
 			position:relative; left:200px; top:-100px;}
+.table{
+	top: 50%;
+	left: 50%;
+	background-color: #ff99ff;
+}

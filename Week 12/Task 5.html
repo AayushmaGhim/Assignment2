@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 5</title>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=xJqM01EHEG-P7t8LnCK3J_syRCRv6wIl8xcjr_isCJ1Q5ClzDT_NZdq19hX7AOO5v5_nF6xFNnZZ61C-jU9OYhAYaG6hRRqlD5Hua52pda1B2GOGR0Ttl1VV_5I8iHmYmKPFcZED2vuYi0h-SHN-De2woK3ND_qL8CXzoqwU0rFIy_vkxVXbJmFVSA2xVSgKyqAtaA1ODDRky5Qzh6XX9QvFW5AtVJPLkQNd2xSQ99zM1Gp2vWYG4XsvANAtsHJgXbyEFeE7zCCOaYb4INfJH8oukVVnzf6Qp1CkflEeKgWzkzMhChxFIN17T7fwE4DpEpqIXd9p_VWpF0P0tmM1k_Sv3XcXcxagrn22L0qTjU7LmFMwo-iKrtWZ-QiNyw8eQtQ-ETZV1XOhMBWsNEISgFRNmC9yK4byxC1ZBZV4IwWoH9v-UhrU9Acb9OdG7z0V-SJP1RAXqFL8WQ5A0DQS_8wkanvGDIae2H3dzG2ooFRXsYgPgPCCFEpoBfjsLsh-g3ODnaem-GncGBY_q_j8L142KWgFGmbRcOK7oZTizVxpR_MAdPO2HfDEJsOt95YKumcrOcANEk8z7g9_OP0ULp6MltLkR4zYTWOKzzEwBdpDX68OygR4L_rMLkYV_N2B_2YAXPWguR-5tg8kD3KWk9DRcjCfYGpxRxgdVAy5MyxCSUIDOLTlQjpE3T4J3DHmHrglw2xU7gG4u73pgXtrLPxvx53WEJ18NRNM9Sl_eX8HuV1dF8lQh3G1iUIROded_TzjCliVmdMBLPxAwWo9nsBzrown4wscToG_Dw1259I98mWNtl-uKgDOOrooo9ZHdH4H9VZYzYBOrPGPkswZV1-pjbkJuCU6feET8_jOwM2tUTV5YLXA8gxGjJk1ARbeB7Dz4MCBXMC-Ndid9U32q0jsuGdaMOsvJG31QoDAEqG-1dfLLeAlgnFMtcY4bHSw7P8EMQNcrL9d9OfB4Vza6pUBquVwPQqjBV9bwL64neboUJeq5gt-eXQI-KuRuRwnYz-olRr-vVGeKCOSu3Y6fv98VWF6Cr_ebybGzHm7F5UZjFeHz5eW6MdBU9XyvDnzxGRqesVRAZjWhfL28a-dz9PHzWSFxjI86pQFO1FVGJf4dFC_vmSQkmPew8tCFjYwL_eDZhQ1f5Ynfpn6QqV080RfCfBpWIh-UvDKGqtoIH8d3HtBBhvW6xcQMFwbFyHF1PA_Rn0_4Glyhfa8rLx3_Q" nonce="e9a20637c2c7604845c7b0ac26506abe" charset="UTF-8"></script><script>
+
+function check(){
+	if(isNaN(document.f1.PhoneNo.value)){
+		alert("It is not a number");
+		return false;
+		}
+	else{
+		alert("It is a number");
+		return true;
+		}
+}
+
+
+function check2(){
+	if(document.f2.Pw.value==document.f2.Pw2.value){
+		alert("The Passwords match.");
+		return true;
+		}
+	else{
+		alert("The Passwords do not match.");
+		return false;
+		}
+	}
+  </script>
+  </head>
+  <body>
+    <h1>Check wheather it's a number or not</h1>
+    <form name="f1" onsubmit="check();">
+    	<input type="text" name="PhoneNo" id="No">
+    	<button type="Submit">Submit</button>
+    </form>
+    <h3>Check password</h3>
+    <form name="f2" onsubmit="check2();">
+    	Password:<br>
+    	<input type="password" name="Pw">
+    	<br> Confirm Password:<br>
+    	<input type="password" name="Pw2">
+    	<button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
